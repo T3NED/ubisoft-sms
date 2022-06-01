@@ -179,7 +179,6 @@ client.once("ready", async () => {
 });
 
 client.on("interactionCreate", async (interaction) => {
-	if (interaction.user.id !== "424566306042544128") return;
 	if (!interaction.isButton() || interaction.customId !== "sms") return;
 
 	await interaction.deferReply({ ephemeral: true });
